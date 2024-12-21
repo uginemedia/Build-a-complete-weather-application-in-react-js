@@ -1,0 +1,78 @@
+.header-section {
+  max-width: 75vw;
+  height: 70px;
+  margin: 40px auto;
+  position: relative;
+  left: 100px;
+  padding: 0 30px 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 0.3rem;
+  color: #fff;
+  opacity: 0;
+  transform: scale(0);
+  animation: zoom-in 1s ease forwards;
+  animation-delay: 0.5s;
+}
+
+.header-section div:nth-child(1) {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 1.3rem;
+}
+
+.header-section div:nth-child(1) span {
+  font-size: 1.1rem;
+}
+
+.header-section div:nth-child(2) {
+  position: relative;
+}
+
+.header-section div:nth-child(2) input {
+  min-width: 600px;
+  padding: 13px 10px 13px 10px;
+  background: rgba(0, 0, 0, 0.1);
+  border: none;
+  outline: none;
+  border-radius: 0.3rem;
+  color: #fff;
+  text-indent: 0.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.header-section div:nth-child(2) input::placeholder {
+  color: #fff;
+}
+
+.header-section div:nth-child(2) ion-icon {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translate(-5%, -50%);
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+
+.header-section div:nth-child(3) {
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.header-section div:nth-child(3) ion-icon {
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.header-section div:nth-child(3) ion-icon:hover {
+  color: #409ac7;
+}
